@@ -24,13 +24,13 @@ export default function Product() {
 
   return (
     <div className="p-4">
-      <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 ">
+      <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product, index) => (
           <div
             key={product.title}
-            className={`flex items-center gap-4  ${
-              index % 2 !== 0 ? "flex-row-reverse" : "flex-row"
-            } sm:flex-row`}
+            className={`flex items-center gap-4
+              ${index % 2 !== 0 ? "flex-row-reverse" : "flex-row"} 
+              sm:flex-row lg:flex-col lg:items-center`}
           >
             <img
               src={product.src}
@@ -38,7 +38,7 @@ export default function Product() {
               className="w-32 sm:w-48 md:w-64 rounded-md"
             />
 
-            <div className="bg-red-50">
+            <div className="">
               <h2 className="text-[#644040] font-semibold">{product.title}</h2>
               <p className="text-[#644040] font-light">{product.desc}</p>
             </div>
