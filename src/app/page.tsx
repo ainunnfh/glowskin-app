@@ -1,16 +1,18 @@
 import Navbar from "./components/Navbar";
+import Product from "./components/Product";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex min-h-screen flex-col w-full lg:px-14 ">
+      <div className="flex  w-full lg:px-14 ">
         <img
           src="/glowingskin-banner.png"
           alt="banner"
           className="w-full h-auto object-cover"
         />
       </div>
+      <Product />
     </>
   );
 }
