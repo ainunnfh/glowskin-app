@@ -1,3 +1,4 @@
+import BestProduct from "./components/BestProduct";
 import Navbar from "./components/Navbar";
 import Product from "./components/Product";
 
@@ -13,6 +14,7 @@ export default function Home() {
         />
       </div>
       <Product />
+      <BestProduct />
     </>
   );
 }
