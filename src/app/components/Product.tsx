@@ -1,22 +1,22 @@
 export default function Product() {
   const products = [
     {
-      src: "/produk-1.png",
+      src: "/product-1.png",
       title: "Product 1",
       desc: "desc for product 1.",
     },
     {
-      src: "/produk-2.png",
+      src: "/product-2.png",
       title: "Product 2",
       desc: "desc for product 2.",
     },
     {
-      src: "/produk-3.png",
+      src: "/product-3.png",
       title: "Product 3",
       desc: "desc for product 3.",
     },
     {
-      src: "/produk-4.png",
+      src: "/product-4.png",
       title: "Product 4",
       desc: "desc for product 4.",
     },
