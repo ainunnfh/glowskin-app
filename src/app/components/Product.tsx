@@ -23,7 +23,7 @@ export default function Product() {
   ];
 
   return (
-    <div className="p-4">
+    <div className="p-4 mt-5">
       <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product, index) => (
           <div
@@ -38,9 +38,9 @@ export default function Product() {
               className="w-32 sm:w-48 md:w-64 rounded-md"
             />
 
-            <div className="">
-              <h2 className="text-[#644040] font-semibold">{product.title}</h2>
-              <p className="text-[#644040] font-light">{product.desc}</p>
+            <div className="text-[#644040] ">
+              <h2 className="font-semibold">{product.title}</h2>
+              <p className="font-light">{product.desc}</p>
             </div>
           </div>
         ))}
